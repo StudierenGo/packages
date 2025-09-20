@@ -4,6 +4,8 @@ import (
 	"demo/packages/account"
 	"demo/packages/helpers"
 	"fmt"
+
+	"github.com/fatih/color"
 )
 
 func main() {
@@ -16,5 +18,6 @@ func main() {
 	}
 
 	result := account.OutputUserData()
-	fmt.Println(result)
+	color.Cyan("Account created!")
+	color.RGB(255, 128, 0).Println(result)
 }
